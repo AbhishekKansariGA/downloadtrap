@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DownloadTrap</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script defer src="main.js"></script>
+
+</head>
+
+
+
+
+<body>
+
+  <section class="header-txt">
+    <img class="logo-img" src="logo.png" alt="">
+    <h1 class="h1-header">DownloadTrap</h1>
+  </section>
+
+
+
+  <section class="header-sect">
+
+    <h2 class="h2-header">Download Youtube Videos</h2>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label class="text-weight"><b>Youtube Video Link:</b></label>
+            <input placeholder="Enter YouTube Video Link" type="txt" name="link" class="form-control link" required>
+          </div>
+        </div>
+      </div>
+
+
+      <form class="form-download">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <section class="select-quality">
+                <label class="text-weight"><b>Select Video Quality:</b></label>
+                <select class="form-control formte" required>
+                  <option selected disabled>Select Video Formate</option>
+              </section>
+              <option value="mp3">Audio Mp3</option>
+              <option value="144">144p</option>
+              <option value="360">360p</option>
+              <option value="480">480p</option>
+              <option value="720">720p</option>
+              <option value="1080">1080p </option>
+              <option value="4k">2160p</option>
+              <option value="8k">4320p</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group mt-4 download-video">
+              <section class="btn-sect">
+                <button class="btn btn-primary btn-block click-btn-down" type="submit">Download</button>
+              </section>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+
+  <section class="user-sect">
+    <h2 class="h2-user">Per Day Average Users And Downloads</h2>
+    <section id="user-bg" class="text-gray-400 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap -m-4 text-center">
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl ">10.8K</h2>
+            <p class="leading-relaxed">Users</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl ">6.3K</h2>
+            <p class="leading-relaxed">Subscribes</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl ">70.3K</h2>
+            <p class="leading-relaxed">Downloads</p>
+          </div>
+          <div class="p-4 sm:w-1/4 w-1/2">
+            <h2 class="title-font font-medium sm:text-4xl text-3xl ">2M</h2>
+            <p class="leading-relaxed">Files</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <h3>Our Team:</h3>
+
+  <footer class="carousel" data-flickity='{ "wrapAround":true,"autoPlay":true}'>
+
+    <div class="carousel-cell">
+      <img onclick="myImg()" src="images/Abhishek.png" alt="Abhishek Kansari">
+    </div>
+    <div class="carousel-cell">
+      <img onclick="myImg()" src="images/helper.png" alt="Abhishek Kansari">
+    </div>
+    <div class="carousel-cell">
+      <img onclick="myImg()" src="images/helper2.png" alt="Abhishek Kansari">
+    </div>
+  </footer>
+
+  <br /><br /><br /><br /><br /><br /><br />
+  <footer>
+    <p>© 2022 G.A PRODUCTIONS LIMITED. All Rights Reserved.</p>
+  </footer>
+
+</body>
+
+</html>
